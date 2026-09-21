@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Elite Diamond Vault</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        fforange: '#ff5500',
+                        ffyellow: '#ffcc00',
+                        ffdark: '#0b0f19',
+                        ffcard: '#131c31',
+                        ffborder: '#1f293d',
+                        ffred: '#e53935'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        rajdhani: ['Rajdhani', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 5px rgba(255, 85, 0, 0.5)' },
+                            '100%': { boxShadow: '0 0 20px rgba(255, 204, 0, 0.8)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Gaming Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Rajdhani:wght@600;700&display=swap');
+        
+        body {
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 85, 0, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(255, 204, 0, 0.08) 0%, transparent 40%);
+            min-height: 100vh;
+        }
+
+        .gaming-border {
+            position: relative;
+        }
+        .gaming-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; width: 100%; height: 3px;
+            background: linear-gradient(90deg, #ff5500, #ffcc00);
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #131c31;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #ff5500;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen font-sans selection:bg-fforange selection:text-white">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-ffdark/80 border-b border-ffborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-fforange to-ffyellow flex items-center justify-center shadow-lg shadow-fforange/30 animate-float">
+                    <i class="fa-solid fa-gamepad text-2xl text-black font-black"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl sm:text-2xl font-black tracking-wider uppercase bg-gradient-to-r from-fforange via-ffyellow to-white bg-clip-text text-transparent">
+                        FF Diamond Vault
+                    </h1>
+                    <p class="text-xs text-gray-400 tracking-widest uppercase font-semibold">Elite Player Registry</p>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+                <a href="#form-section" class="text-gray-300 hover:text-ffyellow transition">Register Player</a>
+                <a href="#codes-section" class="text-gray-300 hover:text-ffyellow transition">Redeem Codes</a>
+                <a href="#vault-section" class="text-gray-300 hover:text-ffyellow transition">Player Vault</a>
+                <div class="flex items-center space-x-2 bg-ffcard px-3 py-1.5 rounded-full border border-ffborder">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+                    <span class="text-xs text-gray-300">Server: <strong class="text-white">IND / Global</strong></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full space-y-12">
+        
+        <!-- Hero Graphics Banner Section -->
+        <div class="relative rounded-3xl overflow-hidden border border-red-500/30 shadow-2xl bg-ffcard">
+            <div class="absolute inset-0 bg-gradient-to-t from-ffdark via-ffdark/50 to-transparent z-10"></div>
+            
+            <img src="_Crimson battle force_ Ff 3d wallpaper.jfif" alt="Free Fire Elite Graphics Banner" class="w-full h-72 md:h-96 object-cover object-center opacity-80 transform hover:scale-105 transition duration-700">
+            
+            <div class="absolute bottom-8 left-6 md:left-10 z-20 max-w-2xl space-y-2">
+                <span class="bg-ffred text-white text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-widest border border-red-400 shadow-md">
+                    <i class="fa-solid fa-fire mr-1"></i> Official Season 2026 Graphics
+                </span>
+                <h2 class="text-3xl md:text-5xl font-extrabold uppercase font-rajdhani text-white drop-shadow-lg">
+                    Free Fire Elite Diamond Vault
+                </h2>
+                <p class="text-gray-200 text-sm md:text-base font-medium">
+                    Save your player profile to unlock official redeem code rewards and exclusive Terabox links instantly!
+                </p>
+            </div>
+        </div>
+
+        <!-- Active Redeem Codes Section -->
+        <section id="codes-section" class="bg-ffcard rounded-3xl border border-ffborder p-6 sm:p-8 shadow-xl">
+            <div class="gaming-border pb-4 mb-6 flex items-center justify-between">
+                <div>
+                    <h3 class="text-xl font-black uppercase tracking-wide text-white flex items-center">
+                        <i class="fa-solid fa-ticket text-ffyellow mr-2.5"></i> Active Free Fire Redeem Codes
+                    </h3>
+                    <p class="text-xs text-gray-400">Copy active codes directly or access our file links</p>
+                </div>
+                <a href="https://1024terabox.com/s/1Zj25MlBpNxmJl7vKWXGUnA" target="_blank" class="px-4 py-2 rounded-xl bg-orange-500/10 border border-orange-500/30 text-ffyellow hover:bg-orange-500/20 transition text-xs font-bold flex items-center space-x-2">
+                    <i class="fa-solid fa-box-archive"></i>
+                    <span>Terabox Files</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-ffdark border border-ffborder rounded-2xl p-4 flex flex-col justify-between space-y-3 relative">
+                    <div class="absolute top-0 right-0 px-3 py-1 bg-emerald-500/10 text-emerald-400 text-[10px] font-bold rounded-bl-xl border-l border-b border-emerald-500/30">Active</div>
+                    <div>
+                        <span class="text-[10px] text-gray-400 uppercase font-bold block">Reward Bundle</span>
+                        <h4 class="text-sm font-bold text-white">1000x Diamonds & Loot Crate</h4>
+                    </div>
+                    <div class="flex items-center justify-between bg-ffcard border border-ffborder rounded-xl p-2.5">
+                        <span id="code-1" class="font-mono text-xs sm:text-sm font-bold text-ffyellow tracking-wider">FF9M-J476-HHXE</span>
+                        <button onclick="copyCode('code-1', this)" class="px-3 py-1.5 rounded-lg bg-fforange text-black font-bold text-xs hover:opacity-90 transition">
+                            <i class="fa-solid fa-copy"></i> Copy
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-ffdark border border-ffborder rounded-2xl p-4 flex flex-col justify-between space-y-3 relative">
+                    <div class="absolute top-0 right-0 px-3 py-1 bg-emerald-500/10 text-emerald-400 text-[10px] font-bold rounded-bl-xl border-l border-b border-emerald-500/30">Active</div>
+                    <div>
+                        <span class="text-[10px] text-gray-400 uppercase font-bold block">Reward Bundle</span>
+                        <h4 class="text-sm font-bold text-white">Elite Pass Bundle & Emote</h4>
+                    </div>
+                    <div class="flex items-center justify-between bg-ffcard border border-ffborder rounded-xl p-2.5">
+                        <span id="code-2" class="font-mono text-xs sm:text-sm font-bold text-ffyellow tracking-wider">FFES-PORT-S3VX</span>
+                        <button onclick="copyCode('code-2', this)" class="px-3 py-1.5 rounded-lg bg-fforange text-black font-bold text-xs hover:opacity-90 transition">
+                            <i class="fa-solid fa-copy"></i> Copy
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-ffdark border border-ffborder rounded-2xl p-4 flex flex-col justify-between space-y-3 relative">
+                    <div class="absolute top-0 right-0 px-3 py-1 bg-emerald-500/10 text-emerald-400 text-[10px] font-bold rounded-bl-xl border-l border-b border-emerald-500/30">Active</div>
+                    <div>
+                        <span class="text-[10px] text-gray-400 uppercase font-bold block">Reward Bundle</span>
+                        <h4 class="text-sm font-bold text-white">M1887 Gun Skin & Vouchers</h4>
+                    </div>
+                    <div class="flex items-center justify-between bg-ffcard border border-ffborder rounded-xl p-2.5">
+                        <span id="code-3" class="font-mono text-xs sm:text-sm font-bold text-ffyellow tracking-wider">MCPW-2D2W-KWF2</span>
+                        <button onclick="copyCode('code-3', this)" class="px-3 py-1.5 rounded-lg bg-fforange text-black font-bold text-xs hover:opacity-90 transition">
+                            <i class="fa-solid fa-copy"></i> Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <section id="form-section" class="lg:col-span-5 bg-ffcard rounded-3xl border border-ffborder p-6 sm:p-8 shadow-xl relative">
+                <div class="gaming-border pb-4 mb-6 flex items-center justify-between">
+                    <div>
+                        <h3 class="text-xl font-black uppercase tracking-wide text-white flex items-center">
+                            <i class="fa-solid fa-shield-halved text-fforange mr-2.5"></i> Player Registration
+                        </h3>
+                        <p class="text-xs text-gray-400">Fill in your exact game identity details</p>
+                    </div>
+                    <div class="w-10 h-10 rounded-lg bg-ffdark border border-ffborder flex items-center justify-center text-ffyellow font-bold text-lg">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                </div>
+
+                <form id="ff-form" class="space-y-5" onsubmit="handleFormSubmit(event)">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">
+                            <i class="fa-solid fa-hashtag text-fforange mr-1"></i> Free Fire User ID
+                        </label>
+                        <input type="text" id="userId" required placeholder="e.g. 4829103942" 
+                            class="w-full bg-ffdark border border-ffborder rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-fforange transition text-sm font-medium">
+                        <p class="text-[11px] text-gray-500 mt-1">Your unique in-game numerical player identification number.</p>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">
+                            <i class="fa-solid fa-user text-fforange mr-1"></i> In-Game Name (IGN)
+                        </label>
+                        <input type="text" id="name" required placeholder="e.g. 亗DEATH×STRIKE亗" 
+                            class="w-full bg-ffdark border border-ffborder rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-fforange transition text-sm font-medium">
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">
+                                <i class="fa-solid fa-cake-candles text-fforange mr-1"></i> Age
+                            </label>
+                            <input type="number" id="age" min="10" max="99" required placeholder="18" 
+                                class="w-full bg-ffdark border border-ffborder rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-fforange transition text-sm font-medium">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">
+                                <i class="fa-solid fa-gem text-ffyellow mr-1"></i> Diamonds
+                            </label>
+                            <input type="number" id="diamonds" min="0" max="999999" required placeholder="10500" 
+                                class="w-full bg-ffdark border border-ffborder rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-ffyellow transition text-sm font-medium">
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-fforange via-fforange to-ffyellow text-black font-black uppercase text-sm tracking-wider shadow-lg shadow-fforange/30 hover:opacity-95 transition flex items-center justify-center space-x-2 cursor-pointer">
+                            <i class="fa-solid fa-circle-check text-base"></i>
+                            <span>Save Player to Vault</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section id="vault-section" class="lg:col-span-7 space-y-6">
+                <div class="bg-ffcard rounded-3xl border border-ffborder p-6 sm:p-8 shadow-xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 gaming-border pb-4 mb-6">
+                        <div>
+                            <h3 class="text-xl font-black uppercase tracking-wide text-white flex items-center">
+                                <i class="fa-solid fa-users-rectangle text-ffyellow mr-2.5"></i> Registered Survivors Vault
+                            </h3>
+                            <p class="text-xs text-gray-400">Manage, inspect, and filter stored player profiles</p>
+                        </div>
+                        
+                        <div class="flex items-center space-x-3">
+                            <div class="relative">
+                                <input type="text" id="search-input" onkeyup="filterProfiles()" placeholder="Search ID or IGN..." 
+                                    class="bg-ffdark border border-ffborder rounded-xl pl-9 pr-4 py-2 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-fforange">
+                                <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-xs text-gray-500"></i>
+                            </div>
+                            <button onclick="clearVault()" title="Clear All Records" class="p-2 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 hover:bg-red-500/20 transition text-xs font-bold">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Profiles Card Grid Container -->
+                    <div id="profiles-container" class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-[600px] overflow-y-auto custom-scrollbar pr-1">
+                        <!-- Dynamically populated profile cards -->
+                    </div>
+
+                    <!-- Empty State -->
+                    <div id="empty-state" class="hidden text-center py-16 space-y-3">
+                        <div class="w-16 h-16 mx-auto rounded-full bg-ffdark border border-ffborder flex items-center justify-center text-gray-600 text-2xl">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+                        <h4 class="text-base font-bold text-gray-300 uppercase tracking-wider">No Player Records Found</h4>
+                        <p class="text-xs text-gray-500 max-w-xs mx-auto">Fill out the registration form on the left to add your first Free Fire player profile to the vault.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Popup Modal Showing Your Redeem Code & Terabox Link -->
+    <div id="redeem-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
+        <div class="bg-ffcard border border-fforange/50 rounded-3xl max-w-md w-full p-6 sm:p-8 text-center space-y-6 shadow-2xl relative overflow-hidden transform scale-95 transition-all duration-300" id="modal-content">
+            <div class="absolute -right-16 -top-16 w-32 h-32 bg-fforange/20 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-tr from-fforange to-ffyellow flex items-center justify-center shadow-lg shadow-fforange/40 text-black text-2xl font-black">
+                <i class="fa-solid fa-gift"></i>
+            </div>
+
+            <div class="space-y-2">
+                <h3 class="text-2xl font-black text-white uppercase tracking-wide">
+                    Your Redeem Code Here!
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-300">
+                    Profile saved successfully! Use your active code below and access your Terabox rewards link.
+                </p>
+            </div>
+
+            <!-- Highlighted Redeem Code Box -->
+            <div class="bg-ffdark border border-fforange/40 rounded-xl p-3 flex items-center justify-between">
+                <span class="text-xs text-gray-400 font-bold uppercase">Secret Code:</span>
+                <span id="modal-generated-code" class="text-sm font-mono font-black text-ffyellow tracking-widest">FF9M-J476-HHXE</span>
+                <span class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-[10px] font-bold uppercase border border-emerald-500/30">Ready</span>
+            </div>
+
+            <div class="bg-ffdark border border-ffborder rounded-xl p-3 flex items-center justify-between text-left">
+                <div class="flex items-center space-x-2 truncate">
+                    <i class="fa-solid fa-box-archive text-xl text-ffyellow"></i>
+                    <span class="text-xs font-mono text-white truncate">1024terabox.com/...</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                <a href="https://1024terabox.com/s/1Zj25MlBpNxmJl7vKWXGUnA" target="_blank" onclick="closeRedeemModal()" 
+                   class="flex-1 py-3.5 rounded-xl bg-gradient-to-r from-fforange to-ffyellow text-black font-extrabold uppercase text-xs tracking-wider shadow-lg shadow-fforange/30 hover:opacity-95 transition flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <span>Open Terabox Link</span>
+                </a>
+                <button onclick="closeRedeemModal()" 
+                        class="px-5 py-3.5 rounded-xl bg-ffdark border border-ffborder text-gray-300 font-bold uppercase text-xs tracking-wider hover:bg-ffborder transition">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-auto border-t border-ffborder bg-ffdark/80 py-6 text-center text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 Free Fire Elite Diamond Vault. Fan community platform.</p>
+            <div class="flex items-center space-x-4">
+                <span class="text-gray-400 hover:text-fforange transition cursor-pointer">Privacy Policy</span>
+                <span class="text-gray-400 hover:text-fforange transition cursor-pointer">Terms of Service</span>
+                <span class="text-gray-400 hover:text-fforange transition cursor-pointer">Support</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let profiles = JSON.parse(localStorage.getItem('ff_vault_profiles')) || [
+            { id: '893412095', name: '亗SHADOW×999亗', age: 21, diamonds: 14500, date: '2026-06-12' },
+            { id: '542190823', name: '⚡VIPER QUEEN⚡', age: 19, diamonds: 8200, date: '2026-06-14' },
+            { id: '719028341', name: 'KIPPER_FF_OP', age: 24, diamonds: 25000, date: '2026-06-15' }
+        ];
+
+        window.onload = function() {
+            renderProfiles();
+        };
+
+        function copyCode(elementId, btnElement) {
+            const codeText = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(codeText).then(() => {
+                const originalHTML = btnElement.innerHTML;
+                btnElement.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+                btnElement.classList.remove('bg-fforange');
+                btnElement.classList.add('bg-emerald-500', 'text-white');
+                setTimeout(() => {
+                    btnElement.innerHTML = originalHTML;
+                    btnElement.classList.remove('bg-emerald-500', 'text-white');
+                    btnElement.classList.add('bg-fforange');
+                }, 2000);
+            });
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const userId = document.getElementById('userId').value.trim();
+            const name = document.getElementById('name').value.trim();
+            const age = parseInt(document.getElementById('age').value);
+            const diamonds = parseInt(document.getElementById('diamonds').value);
+
+            if (!userId || !name || isNaN(age) || isNaN(diamonds)) {
+                return;
+            }
+
+            const newProfile = {
+                id: userId,
+                name: name,
+                age: age,
+                diamonds: diamonds,
+                date: new Date().toISOString().split('T')[0]
+            };
+
+            const existingIndex = profiles.findIndex(p => p.id === userId);
+            if (existingIndex !== -1) {
+                profiles[existingIndex] = newProfile;
+            } else {
+                profiles.unshift(newProfile);
+            }
+
+            saveToLocalStorage();
+            document.getElementById('ff-form').reset();
+            renderProfiles();
+
+            showRedeemModal();
+        }
+
+        function showRedeemModal() {
+            const codesList = ['FF9M-J476-HHXE', 'FFES-PORT-S3VX', 'MCPW-2D2W-KWF2'];
+            const randomCode = codesList[Math.floor(Math.random() * codesList.length)];
+            document.getElementById('modal-generated-code').innerText = randomCode;
+
+            const modal = document.getElementById('redeem-modal');
+            const modalContent = document.getElementById('modal-content');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeRedeemModal() {
+            const modal = document.getElementById('redeem-modal');
+            const modalContent = document.getElementById('modal-content');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 200);
+        }
+
+        function saveToLocalStorage() {
+            localStorage.setItem('ff_vault_profiles', JSON.stringify(profiles));
+        }
+
+        function renderProfiles(filterText = '') {
+            const container = document.getElementById('profiles-container');
+            const emptyState = document.getElementById('empty-state');
+            container.innerHTML = '';
+
+            const filtered = profiles.filter(p => 
+                p.id.toLowerCase().includes(filterText.toLowerCase()) || 
+                p.name.toLowerCase().includes(filterText.toLowerCase())
+            );
+
+            if (filtered.length === 0) {
+                emptyState.classList.remove('hidden');
+                return;
+            } else {
+                emptyState.classList.add('hidden');
+            }
+
+            filtered.forEach((p) => {
+                let tierColor = 'from-blue-500 to-indigo-600';
+                let tierName = 'Bronze Survivor';
+                if (p.diamonds >= 10000) {
+                    tierColor = 'from-purple-600 to-pink-600 animate-glow';
+                    tierName = 'Grandmaster Elite';
+                } else if (p.diamonds >= 5000) {
+                    tierColor = 'from-amber-500 to-fforange';
+                    tierName = 'Heroic Survivor';
+                } else if (p.diamonds >= 1000) {
+                    tierColor = 'from-emerald-500 to-teal-600';
+                    tierName = 'Diamond Tier';
+                }
+
+                const card = document.createElement('div');
+                card.className = 'bg-ffdark border border-ffborder rounded-2xl p-4 sm:p-5 flex flex-col justify-between space-y-4 hover:border-fforange/50 transition transform hover:-translate-y-1 relative overflow-hidden group';
+                
+                card.innerHTML = `
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl ${tierColor} opacity-10 rounded-bl-full pointer-events-none"></div>
+                    
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-[10px] font-extrabold uppercase tracking-widest px-2.5 py-1 rounded-full bg-ffcard border border-ffborder text-ffyellow">
+                                ID: ${escapeHtml(p.id)}
+                            </span>
+                            <button onclick="deleteProfile('${p.id}')" class="text-gray-500 hover:text-red-400 transition p-1" title="Delete Profile">
+                                <i class="fa-solid fa-trash text-xs"></i>
+                            </button>
+                        </div>
+                        <h4 class="text-base sm:text-lg font-black text-white truncate tracking-wide" title="${escapeHtml(p.name)}">
+                            ${escapeHtml(p.name)}
+                        </h4>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-2 py-2 border-y border-ffborder/50 text-xs">
+                        <div>
+                            <span class="text-gray-500 block text-[10px] uppercase font-semibold">Age</span>
+                            <span class="font-bold text-gray-300">${p.age} yrs</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 block text-[10px] uppercase font-semibold">Tier</span>
+                            <span class="font-bold text-ffyellow truncate block">${tierName}</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-1">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 rounded-lg bg-fforange/20 border border-fforange/30 flex items-center justify-center text-ffyellow">
+                                <i class="fa-solid fa-gem text-xs"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] text-gray-500 uppercase font-semibold block">Diamonds</span>
+                                <span class="text-sm font-black text-white">${p.diamonds.toLocaleString()}</span>
+                            </div>
+                        </div>
+                        <span class="text-[10px] text-gray-500">${p.date}</span>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function filterProfiles() {
+            const query = document.getElementById('search-input').value;
+            renderProfiles(query);
+        }
+
+        function deleteProfile(id) {
+            profiles = profiles.filter(p => p.id !== id);
+            saveToLocalStorage();
+            renderProfiles(document.getElementById('search-input').value);
+        }
+
+        function clearVault() {
+            if (confirm('Are you sure you want to clear all registered player profiles?')) {
+                profiles = [];
+                localStorage.removeItem('ff_vault_profiles');
+                renderProfiles();
+            }
+        }
+
+        function escapeHtml(str) {
+            return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        }
+    </script>
+</body>
+</html>
